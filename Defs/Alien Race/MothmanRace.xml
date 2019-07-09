@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+<AlienRace.ThingDef_AlienRace ParentName="BaseSquish">
+    <defName>BasicMothman</defName>
+    <label>Mothman Squishable</label>
+    
+		<description>What's that dark shadow fluttering up above us in the Appalachian twilight? Is it an alien? A supernatural being? A previously unknown species? Who knows! Mothman is one enigmatic dude! Haunting the backwoods of West Virginia and beyond, this adorable little cryptid may be trying to warn us of some imminent catastrophe...or he may just be super excited about his new chocolate chip muffin recipe! I bet it's the chocolate chip muffin recipe. Yeah.</description>
+        
+    <statBases>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <LeatherAmount>0</LeatherAmount>
+      <MarketValue>6000</MarketValue>
+      <Flammability>0.2</Flammability>
+      <SocialImpact>0.05</SocialImpact>
+      <ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.6</ArmorRating_Sharp>	  
+    </statBases>
+
+    <tools>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>ToxicBite</li>
+        </capacities>
+        <power>11</power>
+        <cooldownTime>0.3</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      </li>
+    </tools>
+	
+    <alienRace>
+	
+        <generalSettings>
+
+			<immuneToAge>true</immuneToAge>
+
+			<alienPartGenerator>
+		    
+      
+			<alienbodytypes>
+                <li>Fat</li>
+            </alienbodytypes>
+
+
+			</alienPartGenerator>	          
+
+		</generalSettings>
+        
+		<graphicPaths>
+            <li>
+                <body>Squish/Mothman/</body>
+                <head>Squish/Head/</head>
+                <skeleton></skeleton>
+                <skull></skull>
+            </li>
+        </graphicPaths>
+
+        <hairSettings>
+			<hasHair>false</hasHair>
+        </hairSettings>
+
+
+
+        <thoughtSettings>
+            <replacerList>
+                <li>
+                    <original>KnowColonistDied</original>
+                    <replacer>KnowColonistDiedSquish</replacer>
+			    </li>
+				<li>
+                    <original>BondedAnimalDied</original>
+                    <replacer>BondedAnimalDiedSquish</replacer>
+			    </li>
+				<li>    
+					<original>PawnWithGoodOpinionDied</original>
+                    <replacer>PawnWithGoodOpinionDiedSquish</replacer>
+			    </li>
+				<li>
+    				<original>MySonDied</original>
+                    <replacer>MySonDiedSquish</replacer>
+			    </li>
+				<li>    
+					<original>MyDaughterDied</original>
+                    <replacer>MyDaughterDiedSquish</replacer>
+			    </li>
+				<li>                
+		    		<original>MyHusbandDied</original>
+                    <replacer>MyHusbandDiedSquish</replacer>
+			    </li>
+				<li>            
+        			<original>MyWifeDied</original>
+                    <replacer>MyWifeDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyFianceDied</original>
+                    <replacer>MyFianceDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyFianceeDied</original>
+                    <replacer>MyFianceeDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyLoverDied</original>
+                    <replacer>MyLoverDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyBrotherDied</original>
+                    <replacer>MyBrotherDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MySisterDied</original>
+                    <replacer>MySisterDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyGrandchildDied</original>
+                    <replacer>MyGrandchildDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyFatherDied</original>
+                    <replacer>MyFatherDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyMotherDied</original>
+                    <replacer>MyMotherDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyNieceDied</original>
+                    <replacer>MyNieceDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyNephewDied</original>
+                    <replacer>MyNephewDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyHalfSiblingDied</original>
+                    <replacer>MyHalfSiblingDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyAuntDied</original>
+                    <replacer>MyAuntDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyUncleDied</original>
+                    <replacer>MyUncleDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyGrandparentDied</original>
+                    <replacer>MyGrandparentDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyCousinDied</original>
+                    <replacer>MyCousinDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyKinDied</original>
+                    <replacer>MyKinDiedSquish</replacer>
+                </li>
+            </replacerList>
+			
+            <cannotReceiveThoughts>
+                <li>AteKibble</li>
+                <li>AteHumanlikeMeatDirect</li>
+                <li>AteHumanlikeMeatDirectCannibal</li>
+                <li>AteHumanlikeMeatAsIngredient</li>
+                <li>AteHumanlikeMeatAsIngredientCannibal</li>
+                <li>AteInsectMeatDirect</li>
+                <li>AteInsectMeatAsIngredient</li>
+				<li>Naked</li>
+            </cannotReceiveThoughts>		
+        </thoughtSettings>
+		
+	<raceRestriction>
+		<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>		
+		  <whiteApparelList>
+
+<li>Apparel_AdvancedHelmet</li>
+		
+		  </whiteApparelList>
+	</raceRestriction>	  
+    </alienRace>
+    
+<race>
+
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>false</makesFootprints>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <bloodDef></bloodDef>
+	  <leatherDef>Leather_Patch</leatherDef>
+
+
+      <baseBodySize>1.0</baseBodySize>
+      <baseHealthScale>3.0</baseHealthScale>
+      <baseHungerRate>0.1</baseHungerRate>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays></gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 0)</li>
+          <li>(1.01, 0.00)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>100</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>200</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <ageGenerationCurve>
+        <points>
+
+          <li>(100,0)</li>
+          <li>(200,100)</li>
+          <li>(300,50)</li>
+          <li>(400,40)</li>
+          <li>(1000,0)</li>
+        </points>
+      </ageGenerationCurve>
+
+
+</race>	
+
+    
+</AlienRace.ThingDef_AlienRace>
+</Defs>

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--BodyPartDef>
+    <defName>SquishableBody</defName>
+    <label>stuffed body</label>
+    <hitPoints>150</hitPoints>
+    <permanentInjuryChanceFactor>0.1</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0</bleedRate>
+    <alive>true</alive>
+    <canSuggestAmputation>false</canSuggestAmputation>	
+  </BodyPartDef-->
+
+  <BodyPartDef>
+    <defName>SquishableHead</defName>
+    <label>stuffed head</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0.5</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>false</solid>
+    <bleedRate>1</bleedRate>
+    <alive>true</alive>
+    <tags>
+      <li>HearingSource</li>	  
+    </tags>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>	
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>SquishableBrain</defName>
+    <label>squishable brain</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>2</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>false</solid>
+    <delicate>true</delicate>	
+    <bleedRate>2</bleedRate>
+    <alive>true</alive>
+    <tags>
+      <li>ConsciousnessSource</li>
+    </tags>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>	
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>SquishableBodyHeart</defName>
+    <label>squishable heart</label>
+    <hitPoints>10</hitPoints>
+    <permanentInjuryChanceFactor>0.9</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>false</solid>
+    <alive>true</alive>
+    <bleedRate>3</bleedRate>
+    <tags>
+      <li>BloodPumpingSource</li>	  
+    </tags>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>	
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>SquishableMouth</defName>
+    <label>squishable mouth</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0.5</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0.3</bleedRate>
+    <alive>true</alive>
+    <tags>
+	  <li>EatingSource</li>
+      <li>BreathingPathway</li>
+      <li>EatingPathway</li>
+      <li>TalkingPathway</li>
+      <li>TalkingSource</li>		  
+    </tags>
+    <socketed>true</socketed>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>	
+  </BodyPartDef>   
+  
+  <BodyPartDef>
+    <defName>SquishableEye</defName>
+    <label>squishable eye</label>
+    <hitPoints>12</hitPoints>
+    <permanentInjuryChanceFactor>0.5</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0</bleedRate>
+    <alive>true</alive>
+    <tags>
+      <li>SightSource</li>
+    </tags>
+    <socketed>true</socketed>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>	
+  </BodyPartDef>  
+
+  <BodyPartDef>
+    <defName>SquishableSkin</defName>
+    <label>squishable skin</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0.3</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0.3</bleedRate>
+    <alive>true</alive>
+    <frostbiteVulnerability>0.1</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>	
+  </BodyPartDef>   
+  
+   <BodyPartDef>
+    <defName>SquishableUndercoat</defName>
+    <label>squishable undercoat</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0.3</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>true</alive>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>	
+  </BodyPartDef>    
+
+    <BodyPartDef>
+    <defName>SquishableTorso</defName>
+    <label>stuffed torso</label>
+    <hitPoints>50</hitPoints>
+    <skinCovered>true</skinCovered>
+    <solid>false</solid>
+	<canSuggestAmputation>false</canSuggestAmputation>	
+	</BodyPartDef> 
+  
+  <BodyPartDef>
+    <defName>SquishableStuffing</defName>
+    <label>stuffing</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0.3</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0.5</bleedRate>
+    <alive>true</alive>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>	
+  </BodyPartDef>   
+
+  <BodyPartDef>
+    <defName>SquishableBonBonLayer</defName>
+    <label>bon bon</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0.3</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0.2</bleedRate>
+    <alive>true</alive>
+    <tags>
+      <li>BreathingSource</li>
+      <li>MetabolismSource</li>
+      <li>BloodFiltrationSource</li>
+      <li>BloodFiltrationKidney</li>
+      <li>BloodFiltrationLiver</li>
+	  <li>Spine</li>	  
+    </tags>
+    <frostbiteVulnerability>0</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>false</canSuggestAmputation>	
+  </BodyPartDef>
+  
+  <BodyPartDef>
+    <defName>SquishableArm</defName>
+    <label>stuffed arm</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0.1</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0.1</bleedRate>
+    <alive>true</alive>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+    <frostbiteVulnerability>0.25</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>true</canSuggestAmputation>	
+  </BodyPartDef> 
+
+  <BodyPartDef>
+    <defName>SquishableHand</defName>
+    <label>stuffed hand</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0.4</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0.1</bleedRate>
+    <alive>true</alive>
+    <tags>
+      <li>ManipulationLimbSegment</li>
+      <li>ManipulationLimbDigit</li>	  
+    </tags>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>true</canSuggestAmputation>	
+  </BodyPartDef>    
+  
+  <BodyPartDef>
+    <defName>SquishableLeg</defName>
+    <label>stuffed leg</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0.1</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0.3</bleedRate>
+    <alive>true</alive>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+    <frostbiteVulnerability>0.25</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>true</canSuggestAmputation>	
+  </BodyPartDef>  
+
+  <BodyPartDef>
+    <defName>SquishableFoot</defName>
+    <label>stuffed foot</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0.4</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <solid>false</solid>
+    <bleedRate>0.3</bleedRate>
+    <alive>true</alive>
+    <tags>
+      <li>MovingLimbSegment</li>
+      <li>MovingLimbDigit</li>	  
+    </tags>
+    <frostbiteVulnerability>1</frostbiteVulnerability>
+    <spawnThingOnRemoved>Cloth</spawnThingOnRemoved>
+    <canSuggestAmputation>true</canSuggestAmputation>	
+  </BodyPartDef>
+
+<!-- Bodies_Squishlike -->
+  
+  <BodyDef>
+    <defName>SquishableBody</defName>
+    <label>squishable</label>
+
+    <corePart>
+	  <def>SquishableTorso</def>
+	  <customLabel>squishy core</customLabel>
+      <height>Middle</height>
+      <depth>Outside</depth>	  
+      <groups>
+        <li>Torso</li>
+      </groups>	  
+
+    <parts>
+      <li><def>SquishableUndercoat</def>
+	  <customLabel>head undercoat</customLabel>	  
+	  <coverage>0.1</coverage>
+	  <height>Top</height>
+	  <groups>
+		<li>UpperHead</li>
+		<li>FullHead</li>		  
+		<li>HeadAttackTool</li>	  
+	  </groups>
+		
+		<parts>
+			<li>
+				<def>SquishableHead</def>
+				<coverage>0.8</coverage>
+				<height>Top</height>
+				<groups>
+					<li>UpperHead</li>
+					<li>FullHead</li>		  
+					<li>HeadAttackTool</li>
+				</groups>
+					<parts>
+						<li>
+							<def>SquishableStuffing</def>
+							<customLabel>head stuffing</customLabel>							
+							<coverage>0.6</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>UpperHead</li>
+							</groups>	
+						</li>						
+						<li>
+							<def>SquishableBrain</def>
+							<coverage>0.1</coverage>
+							<depth>Inside</depth>
+							<groups>
+								<li>UpperHead</li>
+							</groups>	
+						</li>
+						<li>
+							<def>SquishableEye</def>
+							<customLabel>squishable left eye</customLabel>
+							<coverage>0.05</coverage>
+							<groups>
+								<li>Eyes</li>
+							</groups>			  
+						</li>
+						<li>
+							<def>SquishableEye</def>
+							<customLabel>squishable right eye</customLabel>
+							<coverage>0.05</coverage>
+							<groups>
+								<li>Eyes</li>
+							</groups>			  
+						</li>
+						<li>
+							<def>SquishableMouth</def>
+							<customLabel>squishable mouth</customLabel>
+							<coverage>0.1</coverage>
+							<groups>
+								<li>Mouth</li>
+								<li>Teeth</li>								
+							</groups>			  
+						</li>						
+					</parts>
+			</li>
+		</parts>
+		</li>
+
+	<li><def>SquishableStuffing</def>
+	<customLabel>core stuffing</customLabel>	
+	<depth>Inside</depth>
+	<height>Middle</height>
+	<coverage>0.35</coverage>
+	<groups>
+		<li>Torso</li>
+	</groups>
+	</li>		
+		
+	<li><def>SquishableUndercoat</def>
+		<customLabel>core undercoat</customLabel>			
+		<depth>Inside</depth>	
+		<coverage>0.1</coverage>
+		<height>Middle</height>		
+		<groups>
+			<li>Torso</li>
+		</groups>
+		<parts>
+			
+			<li>
+			<def>SquishableBodyHeart</def>
+			<customLabel>squishable Heart</customLabel>		  
+			<coverage>0.1</coverage>
+			<depth>Inside</depth>
+			<height>Middle</height>		
+			<groups>
+				<li>Torso</li>
+			</groups>		  			
+			</li>
+			
+			<li>
+			<def>SquishableBonBonLayer</def>
+			<customLabel>squishable bonbons</customLabel>
+			<coverage>0.2</coverage>
+			<depth>Inside</depth>
+			<height>Middle</height>	
+			<groups>
+			<li>Torso</li>
+			</groups>	
+			</li>
+		</parts>
+	</li>	
+		
+		
+<li><def>SquishableSkin</def>
+	<customLabel>left arm covering</customLabel>		  
+	<coverage>0.09</coverage>
+	<groups>
+	  <li>Shoulders</li>
+	</groups>  
+	<parts>
+		<li>
+			<def>SquishableUndercoat</def>
+			<customLabel>left arm undercoat</customLabel>		
+            <coverage>0.2</coverage>
+            <height>Top</height>
+            <depth>Inside</depth>
+            <groups>
+              <li>Torso</li>
+            </groups>									
+		</li>
+		
+		<li>
+			<def>SquishableArm</def>
+			<customLabel>lil left arm</customLabel>
+			<coverage>0.15</coverage>
+			<groups>
+				<li>Arms</li>
+			</groups>
+			<parts>
+                <li>
+                  <def>SquishableHand</def>
+                  <customLabel>lil left hand</customLabel>
+                  <coverage>0.25</coverage>
+                  <height>Bottom</height>
+                  <groups>
+				    <li>Hands</li>
+                    <li>LeftHand</li>
+                  </groups>
+                </li>
+           </parts>		
+		</li>
+
+		<li>
+		<def>SquishableStuffing</def>
+		<customLabel>left arm stuffing</customLabel>	
+		<depth>Inside</depth>			  
+		<coverage>0.5</coverage>
+		<groups>
+			<li>Arms</li>
+		</groups>
+		</li>		
+	</parts>		
+</li>
+
+<li><def>SquishableSkin</def>
+	<customLabel>right arm covering</customLabel>		  
+	<coverage>0.09</coverage>
+	<groups>
+	  <li>Shoulders</li>
+	</groups>  
+	<parts>
+		<li>
+			<def>SquishableUndercoat</def>
+			<customLabel>right arm undercoat</customLabel>		
+            <coverage>0.2</coverage>
+            <height>Top</height>
+            <depth>Inside</depth>
+            <groups>
+              <li>Torso</li>
+            </groups>									
+		</li>
+		
+		<li>
+			<def>SquishableArm</def>
+			<customLabel>lil right arm</customLabel>
+			<coverage>0.15</coverage>
+			<groups>
+				<li>Arms</li>
+			</groups>
+			<parts>
+                <li>
+                  <def>SquishableHand</def>
+                  <customLabel>lil right hand</customLabel>
+                  <coverage>0.25</coverage>
+                  <height>Bottom</height>
+                  <groups>
+				    <li>Hands</li>
+                    <li>RightHand</li>
+                  </groups>
+                </li>
+           </parts>		
+		</li>
+
+		<li>
+		<def>SquishableStuffing</def>
+		<customLabel>right arm stuffing</customLabel>	
+		<depth>Inside</depth>			  
+		<coverage>0.5</coverage>
+		<groups>
+			<li>Arms</li>
+		</groups>
+		</li>		
+	</parts>		
+</li>
+
+<li><def>SquishableTorso</def>
+	<customLabel>lower body</customLabel>
+	<coverage>0.01</coverage>
+	<height>Bottom</height>
+    <groups>
+		<li>Waist</li>
+    </groups>	
+</li>
+
+        <li>
+          <def>SquishableLeg</def>
+          <customLabel>lil left leg</customLabel>
+          <coverage>0.09</coverage>
+		  <height>Bottom</height>	  
+          <groups>
+            <li>Legs</li>
+          </groups>
+          <parts>
+                <li>
+                  <def>SquishableFoot</def>
+                  <customLabel>lil left foot</customLabel>
+                  <coverage>0.3</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+				
+				<li>
+				<def>SquishableUndercoat</def>
+				<customLabel>left leg undercoat</customLabel>	
+				<coverage>0.3</coverage>
+				<groups>
+				<li>Legs</li>
+				</groups>		
+				</li>	
+	
+				<li>
+				<def>SquishableStuffing</def>
+				<customLabel>left leg stuffing</customLabel>	
+				<coverage>0.3</coverage>
+				<groups>
+				<li>Legs</li>
+				</groups>		
+				</li>	
+		  </parts>
+		</li>
+
+        <li>
+          <def>SquishableLeg</def>
+          <customLabel>lil right leg</customLabel>
+          <coverage>0.09</coverage>
+		  <height>Bottom</height>
+          <groups>
+            <li>Legs</li>
+          </groups>
+          <parts>
+                <li>
+                  <def>SquishableFoot</def>
+                  <customLabel>lil right foot</customLabel>
+                  <coverage>0.3</coverage>
+                  <height>Bottom</height>
+                  <groups>
+                    <li>Feet</li>
+                  </groups>
+                </li>
+				
+				<li>
+				<def>SquishableUndercoat</def>
+				<customLabel>right leg undercoat</customLabel>	
+				<coverage>0.3</coverage>
+				<groups>
+				<li>Legs</li>
+				</groups>		
+				</li>	
+	
+				<li>
+				<def>SquishableStuffing</def>
+				<customLabel>right leg stuffing</customLabel>	
+				<coverage>0.3</coverage>
+				<groups>
+				<li>Legs</li>
+				</groups>		
+				</li>	
+		  </parts>
+		</li>
+			
+    </parts>
+    </corePart>
+  </BodyDef>
+
+
+</Defs>
+  

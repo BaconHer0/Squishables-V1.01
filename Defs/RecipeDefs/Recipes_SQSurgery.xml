@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+
+  <RecipeDef Abstract="True" Name="SurgerySquish">
+    <effectWorking>Tailor</effectWorking>
+    <soundWorking>Recipe_Tailor</soundWorking>
+    <workSpeedStat>TailoringSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+  </RecipeDef>
+
+<!-- Surgery Replacement Parts -->
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallNaturalHeartSQ</defName>
+    <label>install heart</label>
+    <description>Replace a squishable heart with a human heart.</description>
+    <workerClass>Recipe_InstallNaturalBodyPart</workerClass>
+    <jobString>Installing heart.</jobString>
+    <workAmount>3700</workAmount>
+    <deathOnFailedSurgeryChance>0.15</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>Heart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableBodyHeart</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallPegLegSQ</defName>
+    <label>install peg leg</label>
+    <description>Install a peg leg.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing peg leg.</jobString>
+    <workAmount>1300</workAmount>
+    <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableLeg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PegLeg</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallWoodenFootSQ</defName>
+    <label>install wooden foot</label>
+    <description>Install a wooden foot.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing wooden foot.</jobString>
+    <workAmount>1000</workAmount>
+    <surgerySuccessChanceFactor>1.40</surgerySuccessChanceFactor>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableFoot</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>WoodenFoot</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallSimpleProstheticLegSQ</defName>
+    <label>install prosthetic leg</label>
+    <description>Install a prosthetic leg.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing prosthetic leg.</jobString>
+    <workAmount>2000</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SimpleProstheticLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>SimpleProstheticLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableLeg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SimpleProstheticLeg</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallSimpleProstheticArmSQ</defName>
+    <label>install prosthetic arm</label>
+    <description>Install a prosthetic arm.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing prosthetic arm.</jobString>
+    <workAmount>2000</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SimpleProstheticArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>SimpleProstheticArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableArm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SimpleProstheticArm</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallSimpleProstheticHeartSQ</defName>
+    <label>install prosthetic heart</label>
+    <description>Install a prosthetic heart.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing prosthetic heart.</jobString>
+    <workAmount>2400</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SimpleProstheticHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>SimpleProstheticHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableBodyHeart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>SimpleProstheticHeart</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallBionicArmSQ</defName>
+    <label>install bionic arm</label>
+    <description>Install a bionic arm.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing bionic arm.</jobString>
+    <workAmount>2500</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>BionicArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableArm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicArm</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallBionicLegSQ</defName>
+    <label>install bionic leg</label>
+    <description>Install a bionic leg.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing bionic leg.</jobString>
+    <workAmount>2500</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>BionicLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableLeg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicLeg</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallBionicHeartSQ</defName>
+    <label>install bionic heart</label>
+    <description>Install a bionic heart.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing bionic heart.</jobString>
+    <workAmount>2000</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>BionicHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableBodyHeart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicHeart</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallArchotechArmSQ</defName>
+    <label>install archotech arm</label>
+    <description>Install an archotech arm.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing archotech arm.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>ArchotechArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableArm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechArm</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallArchotechLegSQ</defName>
+    <label>install archotech leg</label>
+    <description>Install an archotech leg.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing archotech leg.</jobString>
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechLeg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>ArchotechLeg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableLeg</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechLeg</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallPowerClawSQ</defName>
+    <label>install power claw</label>
+    <description>Install a power claw.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing power claw.</jobString>
+    <workAmount>2500</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PowerClaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>PowerClaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableHand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PowerClaw</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallBionicEyeSQ</defName>
+    <label>install bionic eye</label>
+    <description>Install a bionic eye.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing bionic eye.</jobString>
+    <workAmount>3500</workAmount>
+    <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>7</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>BionicEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableEye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicEye</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallArchotechEyeSQ</defName>
+    <label>install archotech eye</label>
+    <description>Install an archotech eye.</description>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <jobString>Installing archotech eye.</jobString>
+    <workAmount>4000</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ArchotechEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>ArchotechEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableEye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ArchotechEye</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallJoywireSQ</defName>
+    <label>install joywire</label>
+    <description>Install a joywire.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing joywire.</jobString>
+    <workAmount>3700</workAmount>
+    <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Joywire</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>Joywire</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableBrain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Joywire</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>InstallPainstopperSQ</defName>
+    <label>install painstopper</label>
+    <description>Install a painstopper.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing painstopper.</jobString>
+    <workAmount>3700</workAmount>
+    <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Painstopper</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>Painstopper</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SquishableBrain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Painstopper</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>ExciseMouldSQ</defName>
+    <label>erradicate mould</label>
+    <description>Erradicate mould growth.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Eradicating mould.</jobString>
+    <workAmount>4500</workAmount>
+    <removesHediff>MouldySpots</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully erradicated {1}'s mould.</successfullyRemovedHediffMessage>
+    <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>6</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>MedicineHerbal</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>PatchHolesSQ</defName>
+    <label>use magic patch-kit on Squishable</label>
+    <description>Using a magic patch-kit to make a Squishable good as new!</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass> 
+
+    <jobString>Patching up holes.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>6000</workAmount>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SQPatchKit</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SQPatchKit</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>  
+  
+  <RecipeDef ParentName="SurgerySquish">
+    <defName>ReplaceStuffingSQ</defName>
+    <label>replace lost stuffing</label>
+    <description>Replace 'lost stuffing' from age or injury with Cloth or Wool.</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>Replacing stuffing.</jobString>
+    <targetsBodyPart>false</targetsBodyPart>	
+    <workAmount>3000</workAmount>
+    <skillRequirements>
+      <Crafting>7</Crafting>
+    </skillRequirements>
+    <allowMixingIngredients>true</allowMixingIngredients>	
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Cloth</li>
+			<li>WoolAlpaca</li>
+			<li>WoolCamel</li>
+			<li>WoolMuffalo</li>
+			<li>WoolMegasloth</li>			
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+		<li>Textiles</li>
+      </categories>
+      <disallowedThingDefs>
+<li>Leather_Patch</li>
+<li>Leather_Bear</li>
+<li>Leather_Bird</li>
+<li>Leather_Bluefur</li>
+<li>Leather_Camel</li>
+<li>Leather_Chinchilla</li>
+<li>Leather_Dog</li>
+<li>Leather_Elephant</li>
+<li>Leather_Fox</li>
+<li>Leather_Heavy</li>
+<li>Leather_Human</li>
+<li>Leather_Light</li>
+<li>Leather_Lizard</li>
+<li>Leather_Panthera</li>
+<li>Leather_Pig</li>
+<li>Leather_Plain</li>
+<li>Leather_Rhinoceros</li>
+<li>Leather_Thrumbo</li>
+<li>Leather_Wolf</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>	
+    <!--appliedOnFixedBodyParts>
+      <li>SquishableStuffing</li>
+    </appliedOnFixedBodyParts-->
+    <removesHediff>SoggySorts</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has successfully replaced {1}'s stuffing.</successfullyRemovedHediffMessage>
+    <deathOnFailedSurgeryChance>0.05</deathOnFailedSurgeryChance>
+	</RecipeDef>
+
+  <!--RecipeDef ParentName="SurgerySquish">
+    <defName>TestSQ</defName>
+    <label>test remove hediffs</label>
+    <description>test remove hediffs</description>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <jobString>testing</jobString>
+    <workAmount>200</workAmount>
+    <removesHediff>MissingBodyPart</removesHediff>
+    <successfullyRemovedHediffMessage>{0} has  healed {1}</successfullyRemovedHediffMessage>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <surgerySuccessChanceFactor>99999</surgerySuccessChanceFactor>
+  </RecipeDef-->
+	
+</Defs>

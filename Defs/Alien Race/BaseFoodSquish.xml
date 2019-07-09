@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<AlienRace.ThingDef_AlienRace Name="BaseFoodSquish" Abstract="True">
+<!--<ThingDef Name="BaseSquish" Abstract="True">-->
+    <thingClass>Pawn</thingClass>
+    <category>Pawn</category>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Pawn</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <hasTooltip>true</hasTooltip>
+    <soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
+    <statBases>
+      <Mass>60</Mass>
+	  <MoveSpeed>4</MoveSpeed>
+      <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0</ArmorRating_Sharp>
+	  <MeatAmount>0</MeatAmount>
+    </statBases>
+    <inspectorTabs>
+      <li>ITab_Pawn_Health</li>
+      <li>ITab_Pawn_Needs</li>
+      <li>ITab_Pawn_Character</li>
+      <li>ITab_Pawn_Training</li>
+      <li>ITab_Pawn_Social</li>
+      <li>ITab_Pawn_Guest</li>
+      <li>ITab_Pawn_Prisoner</li>
+      <li>ITab_Pawn_FormingCaravan</li>
+      <li>ITab_Pawn_Gear</li>
+      <li>ITab_Pawn_Log</li>
+    </inspectorTabs>
+    <comps>
+      <li>
+        <compClass>CompAttachBase</compClass>
+      </li>
+    </comps>
+    <drawGUIOverlay>true</drawGUIOverlay>
+
+    <alienRace>
+        <generalSettings>
+		    <maxDamageForSocialfight>6</maxDamageForSocialfight>
+		    <maleGenderProbability>0.5</maleGenderProbability>
+            <humanRecipeImport>false</humanRecipeImport>
+			<disallowedTraits>
+               <li>Cannibal</li>
+			   <li>Nudist</li>
+            </disallowedTraits>
+			<canLayDown>false</canLayDown>
+
+			<alienPartGenerator>
+                <aliencrowntypes>
+                    <li>Average_Normal</li>
+                </aliencrowntypes>
+			<useGenderedHeads>false</useGenderedHeads>
+            <useGenderedBodies>false</useGenderedBodies>
+
+            <headBodyPartDef>SquishableHead</headBodyPartDef>
+			  <alienskincolorgen Class="ColorGenerator_Options">
+				<options>
+				  <!-- Standard -->
+				  <li>
+					<weight>6</weight>
+					<only>RGBA(1,1,1,1)</only>
+				  </li>
+				  <!-- Red -->
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(1,0.87,0.87,1)</only>
+				  </li>
+				  <!-- Blue -->
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(0.87,0.87,1,1)</only>
+				  </li>
+				  <!-- Green -->
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(0.87,1,0.87,1)</only>
+				  </li>
+				  <!-- Yellow -->
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(1.0,1,0.87,1)</only>
+				  </li>
+				  <!-- Other -->
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(0.87,0.87,0.87,1)</only>
+				  </li>
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(1.0,0.87,1,1)</only>
+				  </li>
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(0.87,1,1,1)</only>
+				  </li>
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(0.87,1,0.85,1)</only>
+				  </li>
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(1.0,0.85,0.87,1)</only>
+				  </li>
+				  <li>
+					<weight>2</weight>
+					<only>RGBA(0.85,1,0.87,1)</only>
+				  </li>
+				</options>
+			  </alienskincolorgen>
+
+			</alienPartGenerator>
+		</generalSettings>
+
+	<raceRestriction>
+		<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>
+
+		<apparelList>
+			<li>Apparel_SQAmulet</li>
+			<li>Apparel_SQNanoShield</li>
+			<li>Apparel_SQProtectiveSphere</li>
+		</apparelList>
+
+		<whiteApparelList>
+			<li>Apparel_ShieldBelt</li>
+			<li>Apparel_SmokepopBelt</li>
+		</whiteApparelList>
+	</raceRestriction>
+
+	</alienRace>
+
+
+
+	<race>
+	<baseHealthScale>1.1</baseHealthScale>
+	<body>SquishableBody</body>
+	<hediffGiverSets>
+      <li>SquishStandard</li>
+	</hediffGiverSets>
+	<deathActionWorkerClass>BaconHer0.DeathActionWorker_Cloth</deathActionWorkerClass>
+    <!--fleshType>Mechanoid</fleshType-->
+    <nameCategory>HumanStandard</nameCategory>
+	<useMeatFrom>Chicken</useMeatFrom>
+	</race>
+
+    <recipes>
+      <li>InstallArchotechEyeSQ</li>
+      <li>InstallArchotechArmSQ</li>
+      <li>InstallArchotechLegSQ</li>
+      <li>InstallPowerClawSQ</li>
+      <li>InstallBionicEyeSQ</li>
+      <li>InstallBionicArmSQ</li>
+      <li>InstallBionicLegSQ</li>
+      <li>InstallBionicHeartSQ</li>
+      <li>InstallSimpleProstheticArmSQ</li>
+      <li>InstallSimpleProstheticLegSQ</li>
+      <li>InstallSimpleProstheticHeartSQ</li>
+      <li>InstallPegLegSQ</li>
+      <li>InstallWoodenFootSQ</li>
+      <li>InstallJoywireSQ</li>
+      <li>InstallPainstopperSQ</li>
+      <li>InstallNaturalHeartSQ</li>
+      <li>ExciseMouldSQ</li>
+	  <li>PatchHolesSQ</li>
+	  <li>ReplaceStuffingSQ</li>
+      <li>Euthanize</li>
+      <li>Anesthetize</li>
+	  <!--li>TestSQ</li-->
+    </recipes>
+
+    <butcherProducts>
+      <Cloth>25</Cloth>
+    </butcherProducts>
+<!--  </ThingDef> -->
+</AlienRace.ThingDef_AlienRace>
+</Defs>

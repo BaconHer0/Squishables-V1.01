@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<AlienRace.ThingDef_AlienRace ParentName="BaseSquish">
+    <defName>BasicRedPanda</defName>
+    <label>Red Panda Squishable</label>
+		<description>Red is the color of my true love's Panda….except it's not! Your true love might be right about lots of things (seriously, you shouldn't leave wet towels on the bed!) but they're dead wrong about their Phylogenetic classification! The Red Panda is more of a bear-raccoon-weasel-skunk hybrid than its monochrome namesake! That adorable red coat, its fluffy stripy tail, its insatiable desire for cupcakes, none of these are traits that scream "panda." So pay attention to your true love when they're explaining why you should cut down on carbs, or quit your dead-end job, or be nicer to your in-laws (man, your true love is pushy!). But the next time they tell you a Red Panda is a type of Panda, tell them, honey, you're wrong!</description>        
+    <statBases>
+      <ComfyTemperatureMin>5</ComfyTemperatureMin>
+      <ComfyTemperatureMax>35</ComfyTemperatureMax>
+      <LeatherAmount>0</LeatherAmount>
+      <MarketValue>2500</MarketValue>
+      <Flammability>2.0</Flammability>
+	  <Cleanliness>-0.1</Cleanliness>
+	  <FoodPoisonChance>-0.15</FoodPoisonChance>	  
+	</statBases>
+    <tools>
+      <li>
+        <label>left paw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right paw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>4</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.8</chanceFactor>	
+      </li>
+    </tools>
+    <alienRace>
+        <generalSettings>
+		<forcedRaceTraitEntries>
+		<li>
+		<defName>Nimble</defName>
+		<chance>20</chance>
+		</li>
+	  </forcedRaceTraitEntries>
+			<alienPartGenerator>             
+			<alienbodytypes>
+            <li>Fat</li>
+            </alienbodytypes>
+			<customDrawSize>(0.85, 0.85)</customDrawSize>
+            <headOffset>(0.00, -0.1)</headOffset>			
+			</alienPartGenerator>	          
+		</generalSettings>
+		<graphicPaths>
+            <li>
+                <body>Squish/RedPanda/</body>
+                <head>Squish/Head/</head>
+                <skeleton></skeleton>
+                <skull></skull>
+            </li>
+        </graphicPaths>
+        <hairSettings>
+			<hasHair>false</hasHair>
+        </hairSettings>
+        <thoughtSettings>
+            <replacerList>
+                <li>
+                    <original>KnowColonistDied</original>
+                    <replacer>KnowColonistDiedSquish</replacer>
+			    </li>
+				<li>
+                    <original>BondedAnimalDied</original>
+                    <replacer>BondedAnimalDiedSquish</replacer>
+			    </li>
+				<li>    
+					<original>PawnWithGoodOpinionDied</original>
+                    <replacer>PawnWithGoodOpinionDiedSquish</replacer>
+			    </li>
+				<li>
+    				<original>MySonDied</original>
+                    <replacer>MySonDiedSquish</replacer>
+			    </li>
+				<li>    
+					<original>MyDaughterDied</original>
+                    <replacer>MyDaughterDiedSquish</replacer>
+			    </li>
+				<li>                
+		    		<original>MyHusbandDied</original>
+                    <replacer>MyHusbandDiedSquish</replacer>
+			    </li>
+				<li>            
+        			<original>MyWifeDied</original>
+                    <replacer>MyWifeDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyFianceDied</original>
+                    <replacer>MyFianceDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyFianceeDied</original>
+                    <replacer>MyFianceeDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyLoverDied</original>
+                    <replacer>MyLoverDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyBrotherDied</original>
+                    <replacer>MyBrotherDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MySisterDied</original>
+                    <replacer>MySisterDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyGrandchildDied</original>
+                    <replacer>MyGrandchildDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyFatherDied</original>
+                    <replacer>MyFatherDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyMotherDied</original>
+                    <replacer>MyMotherDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyNieceDied</original>
+                    <replacer>MyNieceDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyNephewDied</original>
+                    <replacer>MyNephewDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyHalfSiblingDied</original>
+                    <replacer>MyHalfSiblingDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyAuntDied</original>
+                    <replacer>MyAuntDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyUncleDied</original>
+                    <replacer>MyUncleDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyGrandparentDied</original>
+                    <replacer>MyGrandparentDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyCousinDied</original>
+                    <replacer>MyCousinDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyKinDied</original>
+                    <replacer>MyKinDiedSquish</replacer>
+                </li>
+            </replacerList>
+			
+            <cannotReceiveThoughts>
+                <li>AteKibble</li>
+                <li>AteHumanlikeMeatDirect</li>
+                <li>AteHumanlikeMeatDirectCannibal</li>
+                <li>AteHumanlikeMeatAsIngredient</li>
+                <li>AteHumanlikeMeatAsIngredientCannibal</li>
+                <li>AteInsectMeatDirect</li>
+                <li>AteInsectMeatAsIngredient</li>
+				<li>Naked</li>
+            </cannotReceiveThoughts>		
+        </thoughtSettings>
+		 
+    </alienRace>
+    
+<race>
+
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>50</lifeExpectancy>
+      <bloodDef></bloodDef>
+	  <leatherDef>Leather_Patch</leatherDef>
+
+
+      <baseBodySize>0.85</baseBodySize>
+      <baseHungerRate>1.0</baseHungerRate>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>10</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>15</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <ageGenerationCurve>
+        <points>
+          <li>(10,0)</li>
+          <li>(25,50)</li>
+          <li>(20,100)</li>
+          <li>(50,0)</li>
+        </points>
+      </ageGenerationCurve>
+</race>	
+</AlienRace.ThingDef_AlienRace>
+
+
+</Defs>

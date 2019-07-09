@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>PlayerSquish</defName>
+    <label>Squishablers</label>
+    <description>A group of Squishables in search of a new home</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>BattyPlayer</basicMemberKind>
+    <pawnSingular>squishable</pawnSingular>
+    <pawnsPlural>squishables</pawnsPlural>
+    <techLevel>Medieval</techLevel>
+    <backstoryCategories>
+      <li>Civil</li>
+	  <li>Tribal</li>
+	  <li>Raider</li>
+    </backstoryCategories>
+    <expandingIconTexture>World/WorldObjects/Expanding/Town</expandingIconTexture>
+    <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<hairTags>
+			<!--li>NonExisting</li-->
+			<li>Punk</li>
+		</hairTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Synthread</li>
+				<li>DevilstrandCloth</li>
+				<li>Hyperweave</li>
+			</thingDefs>
+		</apparelStuffFilter>
+  </FactionDef>
+
+
+<!-- NPC -->	
+  <FactionDef>
+	<defName>SquishTribe</defName>
+    <label>squishables tribe</label>
+    <description>Squishables may seem too cuddly and huggable to fare on harsh rimworlds but don't let their cuteness fool you because they can be as resilient as any human!</description>
+    <pawnsPlural>squishies</pawnsPlural>
+    <listOrderPriority>1</listOrderPriority>
+    <settlementGenerationWeight>0.1</settlementGenerationWeight>	
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<rescueesCanJoin>true</rescueesCanJoin>
+
+    <autoFlee>true</autoFlee>	
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>Da Squishiest</leaderTitle>
+    <isPlayer>false</isPlayer>
+    <expandingIconTexture>WorldIcon/SquishVillage</expandingIconTexture>
+    <colorSpectrum>
+      <li>(0.1, 0.1, 0.1)</li>
+      <li>(0.25, 0.75, 0.25)</li>
+      <li>(0.33, 0.89, 0.33)</li>
+      <li>(1, 0.3, 0.1)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>0</min>
+      <max>20</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>0</min>
+      <max>20</max>
+    </naturalColonyGoodwill>
+    <goodwillDailyGain>0.10</goodwillDailyGain>
+    <goodwillDailyFall>0.11</goodwillDailyFall>	
+    <mustStartOneEnemy>false</mustStartOneEnemy>
+    <fixedName>Squishable Collective</fixedName>
+	<geneticVariance>0.1</geneticVariance>	
+	
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+	
+    <techLevel>Industrial</techLevel>
+
+    <backstoryCategories>
+      <li>Tribal</li>
+	  <li>Civil</li>
+    </backstoryCategories>
+
+    <hairTags>
+		<li>Punk</li>
+	</hairTags>
+
+
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_Exotic</li>
+	  <li>Orbital_BulkGoods</li>
+	</caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>0</min>
+      <max>30</max>
+    </allowedArrivalTemperatureRange>
+
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+      <!--points>
+        <li>(10000, 0)</li>
+        <li>(10000, 100)</li>
+        <li>(10000, 5000)</li>
+        <li>(10000, 10000)</li>
+      </points-->	  
+    </maxPawnCostPerTotalPointsCurve>	
+	
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <NPCBatty>10</NPCBatty>
+		  <NPCCerberus>3</NPCCerberus>
+          <NPCCorgi>10</NPCCorgi>
+          <NPCGerShep>3</NPCGerShep>
+		  <NPCHedgehog>10</NPCHedgehog>
+          <NPCKitten>10</NPCKitten>
+          <NPCPanda>10</NPCPanda>
+		  <NPCPiggy>3</NPCPiggy>
+          <NPCHusky>3</NPCHusky>
+          <NPCLatte>10</NPCLatte>
+		  <NPCPinkKitty>3</NPCPinkKitty>
+		  <NPCMothman>1</NPCMothman>
+          <NPCRedPanda>3</NPCRedPanda>
+          <NPCAvacado>10</NPCAvacado>
+          <NPCBaldEagle>1</NPCBaldEagle>
+          <NPCBulldog>10</NPCBulldog>
+          <NPCMothman>1</NPCMothman>		  
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <NPCPanda>1</NPCPanda>
+          <NPCAvacado>1</NPCAvacado>		  
+		  </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <NPCBatty>4</NPCBatty>
+		  <NPCCerberus>10</NPCCerberus>
+          <NPCCorgi>4</NPCCorgi>
+          <NPCGerShep>10</NPCGerShep>
+		  <NPCHedgehog>10</NPCHedgehog>
+          <NPCKitten>4</NPCKitten>
+		  <NPCPiggy>10</NPCPiggy>
+          <NPCHusky>10</NPCHusky>
+          <NPCLatte>1</NPCLatte>
+		  <NPCPinkKitty>10</NPCPinkKitty>
+          <NPCRedPanda>4</NPCRedPanda>
+          <NPCBaldEagle>4</NPCBaldEagle>
+          <NPCBulldog>10</NPCBulldog>
+          <NPCMothman>1</NPCMothman>		  
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <NPCBatty>5</NPCBatty>
+		  <NPCCerberus>5</NPCCerberus>
+          <NPCCorgi>5</NPCCorgi>
+          <NPCGerShep>5</NPCGerShep>
+		  <NPCHedgehog>5</NPCHedgehog>
+          <NPCKitten>5</NPCKitten>
+          <NPCMothman>5</NPCMothman>
+          <NPCPanda>5</NPCPanda>
+		  <NPCPiggy>5</NPCPiggy>
+          <NPCHusky>5</NPCHusky>
+          <NPCLatte>5</NPCLatte>
+		  <NPCPinkKitty>5</NPCPinkKitty>
+          <NPCRedPanda>5</NPCRedPanda>
+          <NPCAvacado>5</NPCAvacado>
+          <NPCBaldEagle>2</NPCBaldEagle>
+		  <NPCBigFoot>1</NPCBigFoot>
+          <NPCBulldog>5</NPCBulldog>	
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+		  <NPCCerberus>7</NPCCerberus>
+          <NPCCorgi>7</NPCCorgi>
+          <NPCGerShep>7</NPCGerShep>
+		  <NPCHedgehog>7</NPCHedgehog>
+          <NPCKitten>7</NPCKitten>
+          <NPCMothman>1</NPCMothman>
+		  <NPCPiggy>7</NPCPiggy>
+          <NPCHusky>7</NPCHusky>
+		  <NPCPinkKitty>7</NPCPinkKitty>
+          <NPCRedPanda>7</NPCRedPanda>
+          <NPCBaldEagle>7</NPCBaldEagle>
+		  <NPCBigFoot>1</NPCBigFoot>
+          <NPCBulldog>7</NPCBulldog>	
+        </options>
+      </li>	  
+	  
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/TribalSettlement</homeIconPath>
+  </FactionDef>
+  
+</Defs>

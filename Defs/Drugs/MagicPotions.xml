@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--
+  <ThingDef Name="MagicBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+			<Beauty>0</Beauty>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>12</stackLimit>
+    <thingCategories>
+      <li>Drugs</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+    </comps>
+    <pathCost>15</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <preferability>NeverForNutrition</preferability>
+      <maxNumToIngestAtOnce>0</maxNumToIngestAtOnce>
+      <chairSearchRadius>8</chairSearchRadius>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef Name="MagicPotion" ParentName="MagicBase" Abstract="True">
+    <ingestible>
+      <foodType>Processed</foodType>
+      <baseIngestTicks>120</baseIngestTicks>
+      <chairSearchRadius>0</chairSearchRadius>
+      <ingestSound>Ingest_Pill</ingestSound>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Take {0}</ingestCommandString>
+      <ingestReportString>Taking {0}.</ingestReportString>
+    </ingestible>
+    <socialPropernessMatters>false</socialPropernessMatters>
+  </ThingDef>
+
+  <ThingDef ParentName="MagicPotion">
+    <defName>HealthPotion</defName>
+    <label>hp</label>
+    <description></description>
+    <graphicData>
+      <texPath></texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <techLevel>Medieval</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>MagicalEffects</hediffDef>
+          <severity>1.00</severity>
+          <doToGeneratedPawnIfAddicted>false</doToGeneratedPawnIfAddicted>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>MagicChem</chemical>
+        <addictiveness>0.00</addictiveness>
+        <needLevelOffset>0.00</needLevelOffset>
+        <listOrder>1010</listOrder>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>MagicalEffects</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>magical effects</label>
+    <defaultLabelColor>(1,1,0.5)</defaultLabelColor>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <maxSeverity>0.0</maxSeverity>
+    <isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_HealPermanentWounds" />
+		</comps>
+    <stages>
+    </stages>
+  </HediffDef>
+
+
+
+  <ChemicalDef>
+    <defName>MagicChem</defName>
+    <label>magical chemical</label>
+    <addictionHediff>MagicalAddiction</addictionHediff>
+    <canBinge>false</canBinge>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>MagicPowers</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>magical effects</label>
+    <description>The magical effects of the patch-kit is taking hold. Give it a while to take hold.</description>
+    <listPriority>45</listPriority>
+    <fallPerDay>1</fallPerDay>
+  </NeedDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>MagicalAddiction</defName>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <label>magic courses through</label>
+    <causesNeed>MagicPowers</causesNeed>
+    <everCurableByItem>true</everCurableByItem>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>churning</label>
+        <lifeThreatening>false</lifeThreatening>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>2</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+-->  
+</Defs>

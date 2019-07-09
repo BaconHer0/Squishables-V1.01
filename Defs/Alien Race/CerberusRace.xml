@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+<AlienRace.ThingDef_AlienRace ParentName="BaseSquish">
+    <defName>BasicCerberus</defName>
+    <label>Cerberus Squishable</label>
+    
+		<description>Working dogs are the best! They will happily herd your sheep and then lick your face! They will save Little Timmy, that poor chap always stuck in the wrong end of a well! They can walk on their hind legs in a tutu for your applause and delight!Of these, the most capable canine with a calling is the mighty Cerberus! This triple-noggined pup keeps the inhabitants of Hades from crossing back over the River Styx and does a darn fine job! How many formerly-dead ancient Greeks have you seen walking around the mall recently? None? Me neither!What does this mean for you? After a long day on guard dog duty, this doggie just want to be like all other doggies - cuddling up with a loving owner, getting its three heads petted and finagling a spot on the bed. Who's a good boy? You are!</description>
+        
+    <statBases>
+      <ComfyTemperatureMin>-15</ComfyTemperatureMin>
+      <ComfyTemperatureMax>150</ComfyTemperatureMax>
+      <LeatherAmount>0</LeatherAmount>
+      <MarketValue>2500</MarketValue>
+      <Flammability>0.2</Flammability>
+      <SocialImpact>0.1</SocialImpact>
+      <ArmorRating_Heat>0.80</ArmorRating_Heat>    
+	</statBases>
+
+
+
+<tools>
+<li>
+<label>head butt</label>
+<capacities>
+<li>Blunt</li>
+</capacities>
+<power>3</power>
+<cooldownTime>1</cooldownTime>
+<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+<chanceFactor>0.5</chanceFactor>
+<surpriseAttack>
+<extraMeleeDamages>
+<li>
+<def>Stun</def>
+<amount>5</amount>
+</li>
+</extraMeleeDamages>
+</surpriseAttack>
+</li>
+<li>
+<label>teeth</label>
+<capacities>
+<li>Bite</li>
+</capacities>
+<power>6</power>
+<cooldownTime>0.5</cooldownTime>
+<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+<chanceFactor>0.5</chanceFactor>	
+</li>
+</tools>
+	
+    <alienRace>
+
+
+	
+        <generalSettings>
+
+		<forcedRaceTraitEntries>
+		<li>
+		<defName>Undergrounder</defName>
+		<chance>50</chance>
+		</li>
+	  </forcedRaceTraitEntries>
+
+			<alienPartGenerator>             
+			<alienbodytypes>
+                <li>Fat</li>
+            </alienbodytypes>
+			</alienPartGenerator>	          
+
+		</generalSettings>
+        
+		<graphicPaths>
+            <li>
+                <body>Squish/Cerberus/</body>
+                <head>Squish/Head/</head>
+                <skeleton></skeleton>
+                <skull></skull>
+            </li>
+        </graphicPaths>
+
+        <hairSettings>
+			<hasHair>false</hasHair>
+        </hairSettings>
+
+
+
+        <thoughtSettings>
+            <replacerList>
+                <li>
+                    <original>KnowColonistDied</original>
+                    <replacer>KnowColonistDiedSquish</replacer>
+			    </li>
+				<li>
+                    <original>BondedAnimalDied</original>
+                    <replacer>BondedAnimalDiedSquish</replacer>
+			    </li>
+				<li>    
+					<original>PawnWithGoodOpinionDied</original>
+                    <replacer>PawnWithGoodOpinionDiedSquish</replacer>
+			    </li>
+				<li>
+    				<original>MySonDied</original>
+                    <replacer>MySonDiedSquish</replacer>
+			    </li>
+				<li>    
+					<original>MyDaughterDied</original>
+                    <replacer>MyDaughterDiedSquish</replacer>
+			    </li>
+				<li>                
+		    		<original>MyHusbandDied</original>
+                    <replacer>MyHusbandDiedSquish</replacer>
+			    </li>
+				<li>            
+        			<original>MyWifeDied</original>
+                    <replacer>MyWifeDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyFianceDied</original>
+                    <replacer>MyFianceDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyFianceeDied</original>
+                    <replacer>MyFianceeDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyLoverDied</original>
+                    <replacer>MyLoverDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyBrotherDied</original>
+                    <replacer>MyBrotherDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MySisterDied</original>
+                    <replacer>MySisterDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyGrandchildDied</original>
+                    <replacer>MyGrandchildDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyFatherDied</original>
+                    <replacer>MyFatherDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyMotherDied</original>
+                    <replacer>MyMotherDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyNieceDied</original>
+                    <replacer>MyNieceDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyNephewDied</original>
+                    <replacer>MyNephewDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyHalfSiblingDied</original>
+                    <replacer>MyHalfSiblingDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyAuntDied</original>
+                    <replacer>MyAuntDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyUncleDied</original>
+                    <replacer>MyUncleDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyGrandparentDied</original>
+                    <replacer>MyGrandparentDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyCousinDied</original>
+                    <replacer>MyCousinDiedSquish</replacer>
+			    </li>
+				<li>                    
+					<original>MyKinDied</original>
+                    <replacer>MyKinDiedSquish</replacer>
+                </li>
+            </replacerList>
+			
+            <cannotReceiveThoughts>
+                <li>AteKibble</li>
+                <li>AteHumanlikeMeatDirect</li>
+                <li>AteHumanlikeMeatDirectCannibal</li>
+                <li>AteHumanlikeMeatAsIngredient</li>
+                <li>AteHumanlikeMeatAsIngredientCannibal</li>
+                <li>AteInsectMeatDirect</li>
+                <li>AteInsectMeatAsIngredient</li>
+				<li>Naked</li>
+            </cannotReceiveThoughts>		
+        </thoughtSettings>
+		
+	<raceRestriction>
+		<onlyUseRaceRestrictedApparel>true</onlyUseRaceRestrictedApparel>		
+
+		<apparelList>
+			<li>Apparel_SQAmulet</li>
+			<li>Apparel_SQNanoShield</li>
+			<li>Apparel_SQProtectiveSphere</li>				
+		</apparelList>
+
+		<whiteApparelList>
+			<li>Apparel_FlakVest</li>
+			<li>Apparel_AdvancedHelmet</li>			
+		  </whiteApparelList>
+	</raceRestriction>	  
+    </alienRace>
+    
+<race>
+
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>70</lifeExpectancy>
+      <bloodDef></bloodDef>
+	  <leatherDef>Leather_Patch</leatherDef>
+
+
+      <baseBodySize>1.0</baseBodySize>
+      <baseHungerRate>1.0</baseHungerRate>
+      <foodType>OmnivoreHuman</foodType>
+      <gestationPeriodDays>45</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.01, 0.02)</li>
+          <li>(3.5, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeStageAges>
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>HumanlikeToddler</def>
+          <minAge>2</minAge>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>4</minAge>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+      <ageGenerationCurve>
+        <points>
+          <li>(14,0)</li>
+          <li>(16,100)</li>
+          <li>(50,100)</li>
+          <li>(60,30)</li>
+          <li>(70,18)</li>
+          <li>(80,10)</li>
+          <li>(90,3)</li>
+          <li>(100,0)</li>
+        </points>
+      </ageGenerationCurve>
+
+	  
+
+
+</race>	
+
+    
+</AlienRace.ThingDef_AlienRace>
+</Defs>

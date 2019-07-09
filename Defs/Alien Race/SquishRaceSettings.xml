@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AlienRace.RaceSettings>
+<defName>SquishRaceSettings</defName>
+
+<pawnKindSettings>
+    <startingColonists>
+        <li>
+        <pawnKindEntries>
+            <li>
+            <kindDefs>
+                <li>BattyPlayer</li>
+                <li>CorgiPlayer</li>
+                <li>GerShepPlayer</li>
+                <li>HedgehogPlayer</li>
+                <li>KittenPlayer</li>
+                <li>PandaPlayer</li>
+                <li>PiggyPlayer</li>
+                <li>CerberusPlayer</li>
+                <li>HuskyPlayer</li>
+                <li>LattePlayer</li>
+                <li>PinkKittyPlayer</li>
+                <li>RedPandaPlayer</li>
+                <li>AvacadoPlayer</li>
+                <li>BaldEaglePlayer</li>
+                <li>BulldogPlayer</li>				
+            </kindDefs>
+            <chance>5</chance>
+            </li>
+        </pawnKindEntries>
+        <factionDefs>
+            <li>PlayerTribe</li>
+        </factionDefs>
+        </li>
+		
+		<li>
+        <pawnKindEntries>
+            <li>
+            <kindDefs>
+                <li>BattyPlayer</li>
+                <li>CorgiPlayer</li>
+                <li>GerShepPlayer</li>
+                <li>HedgehogPlayer</li>
+                <li>KittenPlayer</li>
+                <li>PandaPlayer</li>
+                <li>PiggyPlayer</li>
+                <li>CerberusPlayer</li>
+                <li>HuskyPlayer</li>
+                <li>LattePlayer</li>
+                <li>PinkKittyPlayer</li>
+                <li>RedPandaPlayer</li>
+                <li>AvacadoPlayer</li>
+                <li>BaldEaglePlayer</li>
+                <li>BulldogPlayer</li>				
+            </kindDefs>
+            <chance>5</chance>
+            </li>
+        </pawnKindEntries>
+        <factionDefs>
+            <li>PlayerColony</li>
+        </factionDefs>
+        </li>
+
+		<li>
+        <pawnKindEntries>
+            <li>
+            <kindDefs>
+                <li>BattyPlayer</li>
+                <li>CorgiPlayer</li>
+                <li>GerShepPlayer</li>
+                <li>HedgehogPlayer</li>
+                <li>KittenPlayer</li>
+                <li>PandaPlayer</li>
+                <li>PiggyPlayer</li>
+                <li>CerberusPlayer</li>
+                <li>HuskyPlayer</li>
+                <li>LattePlayer</li>
+                <li>PinkKittyPlayer</li>
+                <li>RedPandaPlayer</li>
+                <li>AvacadoPlayer</li>
+                <li>BaldEaglePlayer</li>
+                <li>BulldogPlayer</li>				
+            </kindDefs>
+            <chance>100</chance>
+            </li>
+        </pawnKindEntries>
+        <factionDefs>
+            <li>PlayerSquish</li>
+        </factionDefs>
+        </li>
+		
+    </startingColonists>
+	
+    <alienwandererkinds>
+        <li>
+            <pawnKindEntries>
+            <li>
+            <kindDefs>
+                <li>BattyPlayer</li>
+                <li>CorgiPlayer</li>
+                <li>GerShepPlayer</li>
+                <li>HedgehogPlayer</li>
+                <li>KittenPlayer</li>
+                <li>PandaPlayer</li>
+                <li>PiggyPlayer</li>
+                <li>CerberusPlayer</li>
+                <li>HuskyPlayer</li>
+                <li>LattePlayer</li>
+                <li>PinkKittyPlayer</li>
+                <li>RedPandaPlayer</li>
+                <li>AvacadoPlayer</li>
+                <li>BaldEaglePlayer</li>
+                <li>BulldogPlayer</li>				
+            </kindDefs>
+        
+			<chance>10</chance>
+            </li>
+            </pawnKindEntries>
+
+			<factionDefs>
+			<li>PlayerColony</li>
+			</factionDefs>
+        </li>
+		<li>
+            <pawnKindEntries>
+            <li>
+            <kindDefs>
+                <li>MothmanPlayer</li>
+				<li>BigFootPlayer</li>	
+            </kindDefs>
+        
+			<chance>1</chance>
+            </li>
+            </pawnKindEntries>
+
+			<factionDefs>
+			<li>PlayerSquish</li>
+			</factionDefs>
+        </li>		
+    </alienwandererkinds>
+
+</pawnKindSettings>
+</AlienRace.RaceSettings>
+
+</Defs>

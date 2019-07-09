@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef Name="DeathMemorySquish" Abstract="True">
+    <stackedEffectMultiplier>0.25</stackedEffectMultiplier>
+    <stackLimit>5</stackLimit>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="DeathMemorySquish">
+    <defName>KnowColonistDiedSquish</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>colonist died</label>
+        <description>One of our people died. We should be able to take care of our people.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!--===================== bonded animal died =====================-->
+
+  <ThoughtDef ParentName="DeathMemorySquish">
+    <defName>BondedAnimalDiedSquish</defName>
+		<showBubble>true</showBubble>
+    <durationDays>20</durationDays>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>bonded animal {0} died</label>
+        <description>Such a tender, unique animal. This universe is evil!</description>
+        <baseMoodEffect>-16</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!--===================== friend/rival died =====================-->
+
+  <ThoughtDef ParentName="DeathMemorySquish">
+    <defName>PawnWithGoodOpinionDiedSquish</defName>
+    <durationDays>20</durationDays>
+    <stackLimit>5</stackLimit>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>my friend {0} died</label>
+        <description>Such a wonderful person. The universe gets darker every day.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!--===================== Family member died thoughts =====================-->
+
+  <ThoughtDef Name="DeathMemoryFamilySquish" ParentName="DeathMemorySquish" Abstract="True">
+    <durationDays>30.0</durationDays>
+    <stackLimit>10</stackLimit>
+		<showBubble>true</showBubble>
+	</ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MySonDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my son {0} died</label>
+        <description>My son is dead. My own flesh and blood...</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyDaughterDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my daughter {0} died</label>
+        <description>My daughter is dead. My own flesh and blood...</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyHusbandDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my husband {0} died</label>
+        <description>My husband is dead. I am alone.</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyWifeDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my wife {0} died</label>
+        <description>My wife is dead. I am alone.</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyFianceDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my fiance {0} died</label>
+        <description>My fiance died. Such a man... my future is gone.</description>
+        <baseMoodEffect>-36</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyFianceeDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my fiancée {0} died</label>
+        <description>My fiancée died. Such a woman... my future is gone.</description>
+        <baseMoodEffect>-36</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyLoverDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my lover {0} died</label>
+        <description>My lover died. I am so alone.</description>
+        <baseMoodEffect>-32</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyBrotherDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my brother {0} died</label>
+        <description>My brother died. My own flesh and blood...</description>
+        <baseMoodEffect>-28</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MySisterDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my sister {0} died</label>
+        <description>My sister died. My own flesh and blood...</description>
+        <baseMoodEffect>-28</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyGrandchildDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my grandchild {0} died</label>
+        <description>My grandchild died. My own flesh and blood...</description>
+        <baseMoodEffect>-24</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyFatherDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my father {0} died</label>
+        <description>My father died. He's gone forever.</description>
+        <baseMoodEffect>-16</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyMotherDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my mother {0} died</label>
+        <description>My mother died. She's gone forever.</description>
+        <baseMoodEffect>-16</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyNieceDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my niece {0} died</label>
+        <description>My niece died. Such a wonderful child.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyNephewDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my nephew {0} died</label>
+        <description>My nephew died. Such a wonderful child.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyHalfSiblingDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my half-sibling {0} died</label>
+        <description>My half-sibling died. My own flesh and blood...</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyAuntDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my aunt {0} died</label>
+        <description>My aunt died.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyUncleDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my uncle {0} died</label>
+        <description>My uncle died.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyGrandparentDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my grandparent {0} died</label>
+        <description>My grandparent died.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyCousinDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my cousin {0} died</label>
+        <description>My cousin died. My own flesh and blood...</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef ParentName="DeathMemoryFamilySquish">
+    <defName>MyKinDiedSquish</defName>
+    <stages>
+      <li>
+        <label>my kin {0} died</label>
+        <description>My kin died.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

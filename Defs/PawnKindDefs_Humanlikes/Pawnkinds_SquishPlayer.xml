@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<!-- Player -->
+
+  <PawnKindDef Name="BasePlayerSquish" Abstract="True">
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+    <backstoryCategories>
+      <li>Civil</li>	  
+      <li>Tribal</li>	  
+    </backstoryCategories>
+    <combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+    <itemQuality>Good</itemQuality>
+    <gearHealthRange>
+      <min>1</min>
+      <max>1</max>
+    </gearHealthRange>	
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <chemicalAddictionChance>0.06</chemicalAddictionChance>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+	<apparelTags>
+	  <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>			
+      <li>Outlander</li>
+      <li>Neolithic</li>
+	</apparelTags>	
+    <apparelMoney>
+      <min>0</min>
+      <max>250</max>
+    </apparelMoney>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>
+      <min>0</min>
+      <max>800</max>
+    </techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+	  <li>Advanced</li>
+    </techHediffsTags>
+  </PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>BattyPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+    <label>Batty Squishable</label>
+    <race>BasicBatty</race>
+    <labelMale>male batty</labelMale>
+    <labelFemale>female batty</labelFemale>
+</PawnKindDef>
+  
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>PiggyPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Piggy Squishable</label>
+    <race>BasicPiggy</race>
+    <labelMale>male piggy</labelMale>
+    <labelFemale>female piggy</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>PandaPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Panda Squishable</label>
+    <race>BasicPanda</race>
+    <labelMale>male panda</labelMale>
+    <labelFemale>female panda</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>MothmanPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Mothman Squishable</label>
+    <race>BasicMothman</race>
+    <labelMale>male mothman</labelMale>
+    <labelFemale>female mothman</labelFemale>
+</PawnKindDef>
+ 
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>KittenPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Kitten Squishable</label>
+    <race>BasicKitten</race>
+    <labelMale>male kitten</labelMale>
+    <labelFemale>female kitten</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>HedgehogPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Hedgehog Squishable</label>
+    <race>BasicHedgehog</race>
+    <labelMale>male hedgehog</labelMale>
+    <labelFemale>female hedgehog</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>GerShepPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>German Shepard Squishable</label>
+    <race>BasicGerShep</race>
+    <labelMale>male german shepard</labelMale>
+    <labelFemale>female german shepard</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>CorgiPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Corgi Squishable</label>
+    <race>BasicCorgi</race>
+    <labelMale>male corgi</labelMale>
+    <labelFemale>female corgi</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>CerberusPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Cerberus Squishable</label>
+    <race>BasicCerberus</race>
+    <labelMale>male cerbie</labelMale>
+    <labelFemale>female cerbie</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>HuskyPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Husky Squishable</label>
+    <race>BasicHusky</race>
+    <labelMale>male husky</labelMale>
+    <labelFemale>female husky</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>LattePlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Latte Squishable</label>
+    <race>BasicLatte</race>
+    <labelMale>male latte</labelMale>
+    <labelFemale>female latte</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>PinkKittyPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Pink Kitty Squishable</label>
+    <race>BasicPinkKitty</race>
+    <labelMale>male pink kitty</labelMale>
+    <labelFemale>female pink kitty</labelFemale>
+</PawnKindDef>
+ 
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>RedPandaPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Red Panda Squishable</label>
+    <race>BasicRedPanda</race>
+    <labelMale>male red panda</labelMale>
+    <labelFemale>female red panda</labelFemale>
+</PawnKindDef> 
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>AvacadoPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Avacado Squishable</label>
+    <race>BasicAvacado</race>
+    <labelMale>male avacado</labelMale>
+    <labelFemale>female avacado</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>BaldEaglePlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Bald Eagle Squishable</label>
+    <race>BasicBaldEagle</race>
+    <labelMale>male bald eagle</labelMale>
+    <labelFemale>female bald eagle</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>BigFootPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Bigfoot Squishable</label>
+    <race>BasicBigFoot</race>
+    <labelMale>male bigfoot</labelMale>
+    <labelFemale>female bigfoot</labelFemale>
+</PawnKindDef>
+
+<PawnKindDef ParentName="BasePlayerSquish">
+    <defName>BulldogPlayer</defName>
+    <defaultFactionType>PlayerSquish</defaultFactionType>
+        <label>Bulldog Squishable</label>
+    <race>BasicBulldog</race>
+    <labelMale>male bulldog</labelMale>
+    <labelFemale>female bulldog</labelFemale>
+</PawnKindDef>
+ 
+</Defs>

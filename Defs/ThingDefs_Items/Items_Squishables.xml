@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="SQItemBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>12</stackLimit>
+    <statBases>
+      <Beauty>-4</Beauty>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <!--=============== Mech serum ====================-->
+
+  <ThingDef ParentName="SQItemBase" Name="SQSerumBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Mass>0.2</Mass>
+      <DeteriorationRate>2.0</DeteriorationRate>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>Items</li>
+    </thingCategories>
+    <techLevel>Neolithic</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+
+  <ThingDef ParentName="SQSerumBase">
+    <defName>SQPatchKit</defName>
+    <label>magical patch-kit</label>
+    <description>A one use patch-kit to restore a Squishable to mint condition! This exceedingly rare and powerful item harnesses the hidden protective magic of a thrumbo's horn, the regenerative properties of healing-serums and the precision of luciferium body-morphing nanites to get rid of up to 12 ailments Squishables may have. A Squishable cannot sew itself up so get a friend to help out (under operations bill)!</description>
+    <graphicData>
+      <texPath>Item/Special/SQPatchKit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <statBases>
+      <MarketValue>9000</MarketValue>
+	  <WorkToMake>2000</WorkToMake>
+	  <Nutrition>0</Nutrition>
+    </statBases>
+    <costList>
+      <ThrumboHorn>1</ThrumboHorn>
+      <MechSerumHealer>2</MechSerumHealer>
+      <Luciferium>3</Luciferium>
+    </costList>	
+    <recipeMaker>
+      <workSpeedStat>TailoringSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <recipeUsers>
+        <li>HandTailoringBench</li>
+        <li>ElectricTailoringBench</li>		
+      </recipeUsers>
+      <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+      <skillRequirements>
+		<Crafting>6</Crafting>
+        <Intellectual>6</Intellectual>
+      </skillRequirements>
+    </recipeMaker>	
+    <tradeability>Sellable</tradeability>
+
+
+
+	  <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Do not use this directly. Use an operations bill instead</useLabel>
+        <useDuration>9999999</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>	  
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+    <thingSetMakerTags>
+      <li>RewardSpecial</li>
+    </thingSetMakerTags>
+  </ThingDef>
+  
+  
+  </Defs>
